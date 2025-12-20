@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+/* Estilo para o nosso botão "Tirar Foto" */
+.botao {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+}
+
+#resultado-area {
+    margin-top: 30px;
+}
+
+/* Estilo para cada item da lista de códigos */
+.codigo-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}

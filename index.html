@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Havaianas</title>
+    <!-- Link para nosso arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Identificador de Havaianas</h1>
+        <p>Tire uma foto da sandália para ver os códigos de barras</p>
+    </header>
+
+    <main>
+        <!-- Este é o truque para abrir a câmera no celular! -->
+        <label for="upload-camera" class="botao">Tirar Foto</label>
+        <input type="file" accept="image/*" capture="camera" id="upload-camera" style="display: none;">
+
+        <!-- Área onde vamos mostrar a imagem capturada e os resultados -->
+        <div id="resultado-area">
+            <h2 id="modelo-identificado"></h2>
+            <div id="codigos-container"></div>
+        </div>
+    </main>
+
+    <!-- Bibliotecas JavaScript que usaremos -->
+    <!-- 1. TensorFlow.js (necessário para o Teachable Machine) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <!-- 2. Teachable Machine (nosso "olho mágico") -->
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachable-machine-image.min.js"></script>
+    <!-- 3. JsBarcode (nossa "fábrica de códigos") -->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+
+    <!-- Finalmente, nosso próprio arquivo de cérebro (JavaScript) -->
+    <script src="script.js"></script>
+
+</body>
+</html>

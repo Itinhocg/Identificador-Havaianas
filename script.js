@@ -50,6 +50,7 @@ async function carregarCatalogoDoFirebase() {
         });
         
         console.log("Catálogo carregado com sucesso!", catalogo);
+        console.log("CHAVES DO CATÁLOGO:", Object.keys(catalogo)); 
         modeloIdentificadoEl.innerText = ''; // Limpa a mensagem de "carregando"
     } catch (error) {
         console.error("Erro ao buscar catálogo do Firebase: ", error);

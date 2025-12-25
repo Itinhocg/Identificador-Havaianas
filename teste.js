@@ -1,0 +1,1 @@
+    alert("O arquivo JS foi encontrado!");
